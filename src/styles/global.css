@@ -1,0 +1,41 @@
+:root {
+    --main-blue: #1e669f;
+    --main-yellow: #f6be07;
+    --main-white: #e4e6eb;
+}
+
+html, body, div, span,h1, h2, h3, h4, h5, h6, p, a{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar{
+    width: 100vw;
+    background: var(--main-blue);
+    display: flex;
+}
+
+.brand{
+    font-style: bold;
+    font-size: 1.5rem;
+    margin: 1rem 1rem;
+    color: var(--main-white)
+}
+
+.links{
+    display: flex;
+    align-content: flex-end;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.link{
+    text-decoration: none;
+    margin: 0 0.5rem;
+    color: var(--main-white)
+}
