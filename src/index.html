@@ -6,17 +6,100 @@
     <title>Jota 9 Celulares</title>
     <link rel="stylesheet" href="styles/global.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="material-icons">arrow_upward
+    </i>
+    </button>
+
     <nav class="navbar">
-        <div class="brand">Jota 9 Celulares</div>
+        <div class="brand"><img class="logo" src="assets/images/logo.png" alt=""></div>
         <div class="links">
-            <a href="#" class="link">Home</a>
-            <a href="#" class="link">Quem somos</a>
-            <a href="#" class="link">Servicos</a>
-            <a href="#" class="link">Atendimento</a>
-            <a href="#" class="link">Entre em contato</a>
+            <a href="#topbar" class="link">Home</a>
+            <a href="#about" class="link">Quem somos</a>
+            <a href="#services" class="link">Servicos</a>
+            <a href="#treatment" class="link">Atendimento</a>
+            <a href="#route" class="link">Como chegar</a>
+            <a href="#contact" class="link">Entre em contato</a>
         </div>
     </nav>
+    <div class="contents">
+        <div id="topbar" class="content">
+            <h1 class="content-title">Home</h1>
+            <hr class="hrblack">
+        </div>
+        <div id="about" class="content">
+            <h1 class="content-title">Quem somos</h1>
+            <hr class="hrwhite">
+            <p class="text">
+
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis egestas eu nisl sed scelerisque. In suscipit dolor neque, pretium sagittis odio molestie eu. Duis et augue lacus. Nam non pulvinar leo. Cras commodo porttitor aliquet. Sed nec iaculis arcu. Aenean consectetur felis sed pretium ornare. Sed fermentum ipsum non quam placerat pretium. Morbi mattis suscipit mauris, in ornare orci.
+                
+                Sed euismod tincidunt tempor. In vitae nibh tortor. Suspendisse pretium nulla urna, eu ornare felis volutpat placerat. Curabitur odio metus, lacinia eget malesuada quis, porttitor semper dolor. Mauris tristique urna eget ex pellentesque egestas. Aliquam gravida, nulla et blandit vehicula, dui nisl egestas urna, vitae porttitor ex ante vel odio. Aliquam sed semper odio. Praesent tincidunt dolor ante, ac rhoncus quam finibus in. Sed vel fringilla turpis, et molestie enim. Vestibulum luctus justo quis ullamcorper sodales. Cras condimentum erat metus, nec tincidunt mauris pretium et. Quisque nisl sem, viverra a tellus non, sodales rutrum magna. Donec nec enim lorem. Maecenas sodales accumsan neque, non lobortis nunc consectetur eu. Morbi ac scelerisque quam.</p>
+        </div>
+        <div id="services" class="content">
+            <h1 class="content-title">Servicos</h1>
+            <hr class="hrblack">
+            <div class="services">
+                <div class="service">
+                    <h1 class="servicetitle">Autorizada</h1>
+                    <div class="logofabricante"><img class="servicefabricante" src="assets/images/motorola.png" alt="Motorola"></div>
+                    <p class="servicetext">Reparo de aparelhos dentro do periodo de garantia do fabricante</p>
+                </div>
+                <div class="service">
+                    <h1 class="servicetitle">Reparos fora de garantia</h1>
+                    <div class="logofabricante"><img class="servicefabricante" src="assets/images/motorola.png" alt="Motorola"><img class="servicefabricante" src="assets/images/samsung.png" alt="Samsung"></div>
+                    <p class="servicetext">Orcamentos para consertos de aparelhos que nao estao no periodo de garantia</p>
+                </div>
+                <div class="service">
+                    <h1 class="servicetitle">Vendas de acessorios</h1>
+                    <div class="logofabricante"><img class="servicefabricante" src="assets/images/motorola.png" alt="Motorola"><img class="servicefabricante" src="assets/images/samsung.png" alt="Samsung"></div>
+                    <p class="servicetext">Carregadores, cabos e fones de ouvidos</p>
+                </div>
+                <div class="service">
+                    <h1 class="servicetitle">Cuidados do aparelho</h1>
+                    <p class="servicetext">Kit limpeza celular</p>
+                </div>
+            </div>
+        </div>
+        <div id="treatment" class="content">
+            <h1 class="content-title">Atendimento</h1>
+            <hr class="hrwhite">
+        </div>
+        <div id="route" class="content">
+            <h1 class="content-title">Como chegar</h1>
+            <hr class="hrblack">
+        </div>
+        <div id="contact" class="content">
+            <h1 class="content-title">Entre em contato</h1>
+            <hr class="hrwhite">
+        </div>
+    </div>
+    <div class="footer">
+        <p>Guilherme Ortiz © 2020. All Rights Reserved.</p>
+    </div>
+
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+    </script>
 </body>
 </html>
