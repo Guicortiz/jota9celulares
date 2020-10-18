@@ -82,6 +82,12 @@ html, body, div, span,h1, h2, h3, h4, h5, h6, p, a{
     font-size: 30px;
 }
 
+#home{
+    background-image: url(/src/assets/images/backgroud-mobile.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 .services{
     display: flex;
     flex-direction: column;
@@ -106,7 +112,6 @@ html, body, div, span,h1, h2, h3, h4, h5, h6, p, a{
 }
 
 .servicetitle{
-    color: var(--main-white);
     font-size: 20px;
 }
 
@@ -127,14 +132,7 @@ html, body, div, span,h1, h2, h3, h4, h5, h6, p, a{
 
 .text{
     margin: 0 1rem;
-}
-
-.hrwhite{
-    width: 80%;
-    height: 3px;
-    background-color: var(--main-white);
-    border-width: 0;
-    margin-bottom: 1rem;
+    overflow: auto !important;
 }
 
 .hrblack{
@@ -144,21 +142,54 @@ html, body, div, span,h1, h2, h3, h4, h5, h6, p, a{
     border-width: 0;
     margin-bottom: 1rem;
 }
+
+.treatments{
+    display: flex;
+    flex-direction: column;
+}
+
+.days{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.texttreatment{
+    margin-top: 1rem;
+}
+
+.hours{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hour{
+    margin: 1rem 0;
+    font-size: 24px;
+    font-style: oblique;
+}
+
 .location{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 1rem 1rem;
+    width: 80vw;
 }
 
 #location{
-    margin-bottom: 1rem;
+    width: 2rem;
 }
 
 iframe{
-    width: 100vw;
+    width: 80vw;
     height: 80vh;
+    margin-bottom: 1rem;
 }
 
 .contact{
@@ -170,29 +201,79 @@ iframe{
     align-items: center;
     justify-content: center;
 }
+.contact{
+    margin-bottom: 1rem;
+}
+
+.logos{
+    width: 7%;
+}
 
 .contacttitle{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 20px;
+}
+
+.contacttext{
+word-break: break-all;
 }
 
 .contactlogo{
     height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .contactcontent{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .footer{
     width: 100vw;
     background: var(--main-blue);
-    height: 30vh;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.grouptitle{
+    font-size: 20px;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.loja{
+    text-decoration: none;
+    color: var(--black-dark);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    
+}
+
+#myWhats {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 99;
+    font-size: 10px;
+    border: none;
+    outline: none;
+    background-color: var(--blue-dark);
+    color: var(--main-white);
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 4px;
+  }
+
 
 #myBtn {
     display: none;
@@ -224,4 +305,122 @@ iframe{
 
   #contact{
     background: var(--main-yellow);
+  }
+
+
+  @media (orientation: landscape){
+      .navbar{
+          flex-direction: row;
+          border-bottom: 3px solid var(--main-white);
+      }
+
+      .logo{
+          margin: 0;
+          justify-content: center;
+          align-items: center;
+          margin: 1rem 1rem;
+          
+      }
+
+      .brand{
+          border: 0;
+          margin: 0pt;
+      }
+
+      .links{
+          flex-direction: row;
+          margin: 0;
+      }
+
+      #home{
+        background-image: url(/src/assets/images/backgroud-desktop.png) ;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+      .text{
+          width: 80vw;
+      }
+
+      .services{
+          flex-direction: row;
+          width: 80vw;
+      }
+      .servicetitle{
+          justify-content: center;
+          align-items: center;
+      }
+
+      .service{
+          width: 20vw;
+          margin: 0 1rem;
+          height: 80vh;
+          justify-content: space-evenly;
+      }
+
+      .logofabricante{
+          flex-direction: column;
+      }
+
+      .servicefabricante{
+          margin-bottom: 1rem;
+      }
+
+      .contact{
+          width: 80vw;
+          background: var(--main-white);
+          margin: 1rem 0;
+          flex-direction: row;
+          justify-content: ;
+      }
+
+      .contactlogo{
+          display: flex;
+          width: 10vw;
+          height: auto;
+          justify-content: center;
+          align-items: center;
+          border: 0;
+          cursor: pointer;
+      }
+
+      .logos{
+          width: 30%;
+      }
+
+      .contactcontent{
+          margin: 0.5rem 0;
+          width: 70vw;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+      }
+
+      .treatments{
+          display: flex;
+          flex-direction: row;
+          width: 80vw;
+          height: 80vh;
+      }
+    
+      #logoatendimento{
+          width: 7%;
+      }
+
+      .days{
+          margin: 0;
+      }
+
+      .footer{
+          height: 35vh;
+      }
+
+      .lojas{
+          display: flex;
+          flex-direction: row;
+      }
+
+      #locationloja{
+        width: 7%;
+      }
   }

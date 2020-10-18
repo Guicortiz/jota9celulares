@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
+    <button onclick="topFunction()" id="myWhats" title="Go to whatsapp"><img class="logos" src="/src/assets/icons/whatsapp.png" alt="Whatsapp">
+    </button>
     <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="material-icons">arrow_upward
     </i>
     </button>
@@ -25,18 +27,17 @@
         </div>
     </nav>
     <div class="contents">
-        <div id="topbar" class="content">
-            <h1 class="content-title">Home</h1>
-            <hr class="hrblack">
+        <div id="home" class="content">
+            
         </div>
         <div id="about" class="content">
             <h1 class="content-title">Quem somos</h1>
             <hr class="hrwhite">
             <p class="text">
+                Jota9 Assistência Técnica <br> <br>
 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis egestas eu nisl sed scelerisque. In suscipit dolor neque, pretium sagittis odio molestie eu. Duis et augue lacus. Nam non pulvinar leo. Cras commodo porttitor aliquet. Sed nec iaculis arcu. Aenean consectetur felis sed pretium ornare. Sed fermentum ipsum non quam placerat pretium. Morbi mattis suscipit mauris, in ornare orci.
-                
-                Sed euismod tincidunt tempor. In vitae nibh tortor. Suspendisse pretium nulla urna, eu ornare felis volutpat placerat. Curabitur odio metus, lacinia eget malesuada quis, porttitor semper dolor. Mauris tristique urna eget ex pellentesque egestas. Aliquam gravida, nulla et blandit vehicula, dui nisl egestas urna, vitae porttitor ex ante vel odio. Aliquam sed semper odio. Praesent tincidunt dolor ante, ac rhoncus quam finibus in. Sed vel fringilla turpis, et molestie enim. Vestibulum luctus justo quis ullamcorper sodales. Cras condimentum erat metus, nec tincidunt mauris pretium et. Quisque nisl sem, viverra a tellus non, sodales rutrum magna. Donec nec enim lorem. Maecenas sodales accumsan neque, non lobortis nunc consectetur eu. Morbi ac scelerisque quam.</p>
+                A jota9 nasceu em 2010, com a finalidade de atender clientes da empresa Samsung fabricante de celulares e tablets, na garantia e fora da garantia do produto Começou  com 8 funcionários e dois sócios Os primeiros passos foram de aprendizado do mercado, e adequação aos programas de metas da fabricante. Este segmento necessita de funcionários técnicos especializados em reparos de celular, pois o aparelhos possuem peças frágeis e de alto custo, como por exemplo Frontal e Placa que representam 80% do preço do aparelho ,depois de 2 anos houve uma troca de socio, visto a empresa precisar de mais agilidade em certos setores e mais precisão de dados Assim nasceu na  empresa um software de chão de fábrica, desenvolvido por um dos sócios para atender as necessidades da empresa A empresa passou por um crescimento de faturamento, necessitando de um local mais amplo e de melhor localização, em 2015 houve  mudança de prédio para local de melhor visualização A empresa ainda passaria para aquisição de mais uma empresa fabricante de celulares para fazer a assistência técnica autorizada, esta empresa era a Motorola, com isto a Jota9 constava com duas marcas de fabricante sendo autorizada de ambos. <br><br>
+                Neste momento a empresa atinge seu auge em faturamento e números de funcionários, num total de 18 funcionários A empresa ja dominava as métricas dos fabricantes, e atendia a contento as especificações dos fabricantes Porem em 2017 por uma estratégia de um dos fabricantes, Samsung o segmento de serviço de Autorizada foi descontinuada, ficando apenas o atendimento aos produtos fora de garantia Com isto a Jota9 deve que se reinventar para manter e seus custo e nova adequação ao mercado Hj ela atende A Motorola como autorizada e a Samsung como Especializada</p>
         </div>
         <div id="services" class="content">
             <h1 class="content-title">Servicos</h1>
@@ -59,72 +60,126 @@
                 </div>
                 <div class="service">
                     <h1 class="servicetitle">Cuidados do aparelho</h1>
+                    <div class="logofabricante"><img class="servicefabricante" src="assets/images/motorola.png" alt="Motorola"><img class="servicefabricante" src="assets/images/samsung.png" alt="Samsung"></div>
                     <p class="servicetext">Kit limpeza celular</p>
                 </div>
             </div>
         </div>
         <div id="treatment" class="content">
             <h1 class="content-title">Atendimento</h1>
-            <hr class="hrwhite">
+            <hr class="hrblack">
+            <div class="treatments">
+                <div class="days">
+                    <img class="logos" id="logoatendimento" src="/src/assets/icons/calendario.png" alt="Telefone">
+                    <p class="texttreatment">Segunda-feira</p>
+                    <p class="texttreatment">Terca-feira</p>
+                    <p class="texttreatment">Quarta-feira</p>
+                    <p class="texttreatment">Quinta-feira</p>
+                    <p class="texttreatment">Sexta-feira</p>
+                </div>
+                <div class="hours">
+                    <img class="logos" id="logoatendimento" src="/src/assets/icons/hora.png" alt="Telefone">
+                    <p class="texttreatment">Abertura</p>
+                    <p class="texttreatment">as</p>
+                    <p class="hour">08:00</p>
+
+                    <img class="logos" id="logoatendimento" src="/src/assets/icons/hora.png" alt="Telefone">
+                    <p class="texttreatment">Fechamento</p>
+                    <p class="texttreatment">as</p>
+                    <p class="hour">17:50</p>
+
+                </div>
+            </div>
+
         </div>
         <div id="route" class="content">
             <h1 class="content-title">Como chegar</h1>
             <hr class="hrblack">
-            <p class="location"><i id="location" class="material-icons">location_on</i>R. Olavo Bilac, 1092 - Jardim Sumare, Ribeirão Preto - SP, 14025-400 </p>
+            <img class="logos" id="location" src="/src/assets/icons/location.png" alt="Localizacao">
+            <p class="location"> R. Olavo Bilac, 1092 - Jardim Sumare, Ribeirão Preto - SP, 14025-400 </p>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.081639572067!2d-47.80905298560384!3d-21.188915584155037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b9bedef68c7613%3A0xd426020657b7b7e7!2sJota9%20Celulares!5e0!3m2!1spt-BR!2sbr!4v1602909880125!5m2!1spt-BR!2sbr" width="100vw" height="100vh" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
         <div id="contact" class="content">
             <h1 class="content-title">Entre em contato</h1>
-            <hr class="hrwhite">
+            <hr class="hrblack">
             <div class="contacts">
                 <div class="contact">
-                    <p class="contacttitle">Whatsapp</p>
+                    <a target="_blank" href="https://wa.me/message/WUOXFLQW6ZVSN1" class="contactlogo"><img class="logos" src="/src/assets/icons/whatsapp.png" alt="Whatsapp"></a>
                     <div class="contactcontent">
-                        <p class="contactlogo"><i id="location" class="material-icons">local_phone</i></p>
+                        <p class="contacttitle">Whatsapp</p>
                         <p class="contacttext">(16) 98115-0132</p>
                     </div>
                     
                 </div>
                 <div class="contact">
-                    <p class="contacttitle">Telefone fixo</p>
+                    <a target="_blank" href="tel:32354003" class="contactlogo"><img class="logos" src="/src/assets/icons/telefone.png" alt="Telefone"></a>
                     <div class="contactcontent">
-                        <p class="contactlogo"><i id="location" class="material-icons">local_phone</i></p>
+                        <p class="contacttitle">Telefone fixo</p>
                         <p class="contacttext">(16) 3235-4003</p>
                     </div>
                 </div>
                 <div class="contact">
-                    <p class="contacttitle">Telefone fixo</p>
+                    <a target="_blank" href="tel:32354004" class="contactlogo"><img class="logos" src="/src/assets/icons/telefone.png" alt="Telefone"></a>    
                     <div class="contactcontent">
-                        <p class="contactlogo"><i id="location" class="material-icons">local_phone</i></p>
+                        
+                        <p class="contacttitle">Telefone fixo</p>
                         <p class="contacttext">(16) 3235-4004</p>
                     </div>
                 </div>
                 <div class="contact">
-                    <p class="contacttitle">Email</p>
+                    <a target="_blank" href="mailto:contato@jota9celulares.com.br" class="contactlogo"><img class="logos" src="/src/assets/icons/email.png" alt="Email"></a>
                     <div class="contactcontent">
-                        <p class="contactlogo"><i id="location" class="material-icons">email</i></p>
+                        <p class="contacttitle">Email</p>
                         <p class="contacttext">contato@jota9celulares.com.br</p>
                     </div>
                 </div>
                 <div class="contact">
-                    <p class="contacttitle">Facebook</p>
+                    <a target="_blank" href="https://www.facebook.com/JotaNoveTelecomunicacoes" class="contactlogo"><img class="logos" src="/src/assets/icons/facebook.png" alt="Facebook"></a>
                     <div class="contactcontent">
-                        <p class="contactlogo"></p>
-                        <p class="contacttext">https://www.facebook.com/JotaNoveTelecomunicacoes</p>
+                        <p class="contacttitle">Facebook</p>
+                        <p class="contacttext">@JotaNoveTelecomunicacoes</p>
                     </div>
                 </div>
                 <div class="contact">
-                    <p class="contacttitle">Instagram</p>
+                    <a target="_blank" href="https://www.instagram.com/jota9celulares/" class="contactlogo"><img class="logos" src="/src/assets/icons/instagram.png" alt="Instagram"></a>
                     <div class="contactcontent">
-                        <p class="contactlogo"></p>
-                        <p class="contacttext">https://www.instagram.com/jota9celulares/</p>
+                        <p class="contacttitle">Instagram</p>
+                        <p class="contacttext">@jota9celulares</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="footer">
-        <p>Guilherme Ortiz © 2020. All Rights Reserved.</p>
+        <div class="group">
+            <p class="grouptitle">Grupo megacenter</p>
+            <hr class="hrblack">
+            <div class="lojas">
+                <a target="_blank" href="https://www.facebook.com/megacenterbauru/" class="loja">
+                    <img class="logos" id="locationloja" src="/src/assets/icons/location.png" alt="Localizacao">
+                    <p class="lojatitle">Megacenter Bauru</p>
+                    <p>Autorizada</p>
+                    <p class="autorizada">Motorola e Samsung</p>
+                </a>
+                <a target="_blank" href="https://www.facebook.com/megacenterprudente" class="loja">
+                    <img class="logos" id="locationloja" src="/src/assets/icons/location.png" alt="Localizacao">
+                    <p class="lojatitle">Megacenter Presidente Prudente</p>
+                    <p>Autorizada</p>
+                    <p class="autorizada">Motorola</p>
+                </a>
+                <a target="_blank" href="http://megacenter.com.br/" class="loja">
+                    <img class="logos" id="locationloja" src="/src/assets/icons/location.png" alt="Localizacao">
+                    <p class="lojatitle">Megacenter Marilia</p>
+                    <p>Autorizada</p>
+                    <p class="autorizada">Samsung</p>
+                </a>
+            </div>
+        </div>
+        <div class="devlop">
+            <p><a class="link" href="https://github.com/Guicortiz/" target="_blank">Guilherme Ortiz</a> © 2020. All Rights Reserved.</p>
+        </div>
+        
+        
     </div>
 
     <script>
@@ -148,5 +203,6 @@
           document.documentElement.scrollTop = 0;
         }
     </script>
+
 </body>
 </html>
