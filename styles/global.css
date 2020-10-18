@@ -196,6 +196,8 @@ iframe{
 .contact{
     display: flex;
     flex-direction: column;
+    text-decoration: none;
+    color: var(--black-dark);
 }
 
 .contacts{
@@ -369,10 +371,10 @@ word-break: break-all;
 
       .contact{
           width: 80vw;
-          background: var(--main-white);
           margin: 1rem 0;
           flex-direction: row;
-          justify-content: ;
+          align-items: center;
+          justify-content: center;
       }
 
       .contactlogo{
@@ -390,8 +392,8 @@ word-break: break-all;
       }
 
       .contactcontent{
+          width: 25vw;
           margin: 0.5rem 0;
-          width: 70vw;
           flex-direction: column;
           justify-content: center;
           align-items: center;
