@@ -6,14 +6,46 @@
     <title>Jota 9 Celulares</title>
     <link rel="stylesheet" href="styles/global.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-    <button onclick="topFunction()" id="myWhats" title="Go to whatsapp"><img class="logos" src="/src/assets/icons/whatsapp.png" alt="Whatsapp">
+    <button onclick="whatsfunction()" id="myWhats" title="Entrar em contato"><img class="mywhats" src="/assets/icons/whatsapp.png" alt="Whatsapp">
     </button>
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="material-icons">arrow_upward
-    </i>
+    <button onclick="topFunction()" id="myBtn" title="Subir para o topo"><img class="mywhats" src="/assets/icons/arrowup.png" alt="Whatsapp">
     </button>
+
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          
+          <div class="headermodal">
+              <p class="modalheadertext">
+                  Entre em contato conosco via whatsapp!
+              </p>
+          </div>
+          <d class="modalbuttons">
+            <a id="whatsappbutton" target="_blank" href="https://api.whatsapp.com/send?phone=5516981150132&text=Ol%C3%A1,%20queria%20conversar%20sobre%20os%20servi%C3%A7os%20de%20assist%C3%AAncia%20t%C3%A9cnica%20autorizada" class="contact">
+                <p  class="contactlogo"><img class="logos" src="assets/icons/whatsapp.png" alt="Whatsapp"></p>
+                <div class="contactcontent">
+                    <p class="contacttitle">Whatsapp</p>
+                    <p class="contacttitle">Autorizada</p>
+                    <p class="contacttext">(16) 98115-0132</p>
+                </div>
+            </a>
+            <a id="whatsappbutton" target="_blank" href="https://api.whatsapp.com/send?phone=5516981420199&text=Ol%C3%A1,%20queria%20conversar%20sobre%20os%20servi%C3%A7os%20de%20reparo%20fora%20da%20garantia%20e%20vendas%20de%20acess%C3%B3rios." class="contact">
+                <p class="contactlogo"><img class="logos" src="assets/icons/whatsapp.png" alt="Whatsapp"></p>
+                <div class="contactcontent">
+                    <p class="contacttitle">Whatsapp</p>
+                    <p class="contacttitle">Reparos fora de garantia</p>
+                    <p class="contacttitle">e vendas de acessorios</p>
+                    <p class="contacttext">(16) 98142-0199</p>
+                </div>
+            </a>
+          </d>
+          <span class="close">&times;</span>
+        </div>
+      
+      </div>
 
     <nav class="navbar">
         <div class="brand"><img class="logo" src="assets/images/logo.png" alt=""></div>
@@ -28,6 +60,20 @@
     </nav>
     <div class="contents">
         <div id="home" class="content">
+            <div class="consultas">
+                <a href="https://motorola-global-portal-pt.custhelp.com/app/mcp/appointment_home" target="_blank"class="consulta">
+                    <p class="textconsulta">
+                        Consultar
+                    </p>
+                    <p class="textconsulta">Reparo em garantia</p>
+                </a>
+                <a href="https://jota9celulares1.websiteseguro.com/infointernet.php" target="_blank"class="consulta">
+                    <p class="textconsulta">
+                        Consultar
+                    </p>
+                    <p class="textconsulta">Reparo fora de garantia</p>
+                </a>
+            </div>
             
         </div>
         <div id="about" class="content">
@@ -106,14 +152,16 @@
                 <a target="_blank" href="https://api.whatsapp.com/send?phone=5516981150132&text=Ol%C3%A1,%20queria%20conversar%20sobre%20os%20servi%C3%A7os%20de%20assist%C3%AAncia%20t%C3%A9cnica%20autorizada" class="contact">
                     <p  class="contactlogo"><img class="logos" src="assets/icons/whatsapp.png" alt="Whatsapp"></p>
                     <div class="contactcontent">
-                        <p class="contacttitle">Whatsapp Autorizada</p>
+                        <p class="contacttitle">Whatsapp</p>
+                        <p class="contacttitle">Autorizada</p>
                         <p class="contacttext">(16) 98115-0132</p>
                     </div>
                 </a>
                 <a target="_blank" href="https://api.whatsapp.com/send?phone=5516981420199&text=Ol%C3%A1,%20queria%20conversar%20sobre%20os%20servi%C3%A7os%20de%20reparo%20fora%20da%20garantia%20e%20vendas%20de%20acess%C3%B3rios." class="contact">
                     <p class="contactlogo"><img class="logos" src="assets/icons/whatsapp.png" alt="Whatsapp"></p>
                     <div class="contactcontent">
-                        <p class="contacttitle">Whatsapp Reparos fora de garantia</p>
+                        <p class="contacttitle">Whatsapp</p>
+                        <p class="contacttitle">Reparos fora de garantia</p>
                         <p class="contacttitle">e vendas de acessorios</p>
                         <p class="contacttext">(16) 98142-0199</p>
                     </div>
@@ -185,22 +233,45 @@
     <script>
         //Get the button
         var mybutton = document.getElementById("myBtn");
+        var mybuttonwhats = document.getElementById("myWhats");
         
-        // When the user scrolls down 20px from the top of the document, show the button
         window.onscroll = function() {scrollFunction()};
         
         function scrollFunction() {
           if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
             mybutton.style.display = "block";
+            mybuttonwhats.style.display = "block";
           } else {
             mybutton.style.display = "none";
+            mybuttonwhats.style.display = "none";
           }
         }
         
-        // When the user clicks on the button, scroll to the top of the document
         function topFunction() {
           document.body.scrollTop = 0;
           document.documentElement.scrollTop = 0;
+        }
+
+        var modal = document.getElementById("myModal");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        mybuttonwhats.onclick = function() {
+        modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
         }
     </script>
 
