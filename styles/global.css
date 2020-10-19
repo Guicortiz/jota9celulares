@@ -84,7 +84,7 @@ html, body, div, span,h1, h2, h3, h4, h5, h6, p, a{
 }
 
 #home{
-    background-image: url(../assets/images/backgroud-mobile.png);
+    background-image: url(../assets/images/Imagem-01.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
