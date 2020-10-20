@@ -1,6 +1,7 @@
 :root {
-    --main-blue: #1e669f;
-    --main-yellow: #f6be07;
+    --main-blue: #004e9f;
+    --alt-blue: #1e669f;
+    --main-yellow: #ffca06;
     --main-white: #e4e6eb;
     --blue-dark:  #1e479f;
     --black-dark: #0a0a0a;
@@ -84,7 +85,7 @@ html, body, div, span,h1, h2, h3, h4, h5, h6, p, a{
 }
 
 #home{
-    background-image: url(../assets/images/Imagem-01.jpg);
+    background-image: url(../assets/images/backgroudmobile.webp);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -149,7 +150,7 @@ html, body, div, span,h1, h2, h3, h4, h5, h6, p, a{
 }
 
 .servicefabricante{
-    object-fit: fill;
+    object-fit: contain;
     max-width: 120px;
 }
 
@@ -325,6 +326,7 @@ word-break: break-all;
     border-radius: 50%;
     width: 50px;
     height: 50px;
+    box-shadow: inset 0px 1px 15px -4px rgba(0,0,0,1);
   }
   
   #myWhats:hover {
@@ -403,7 +405,9 @@ word-break: break-all;
   @media (orientation: landscape){
       .navbar{
           flex-direction: row;
-          border-bottom: 3px solid var(--main-white);
+          -webkit-box-shadow: inset 0px -142px 13px -144px rgba(0,0,0,1);
+          -moz-box-shadow: inset 0px -142px 13px -144px rgba(0,0,0,1);
+          box-shadow: inset 0px -142px 13px -144px rgba(0,0,0,1);
       }
 
       .logo{
@@ -425,7 +429,7 @@ word-break: break-all;
       }
 
       #home{
-        background-image: url(../assets/images/Imagem-03.jpg) ;
+        background-image: url(../assets/images/backgroudweb.webp) ;
         background-repeat: no-repeat;
         background-size: cover;
     }
